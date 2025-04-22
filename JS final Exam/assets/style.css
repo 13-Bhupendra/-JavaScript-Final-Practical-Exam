@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image:linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6) ), url('image/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #198754;
+    transition: color 0.3s ease;
+  }
+  
+  .table-responsive {
+    height: 80vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  
+  table {
+    margin: 0;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #d1e7dd !important;
+    color: #0f5132;
+    font-size: 1rem;
+    font-weight: bold;
+    position: sticky;
+    top: -4%;
+  }
+  
+  tbody.table-primary {
+    background-color: #e7f1fc;
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #cfe2ff;
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle !important;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    .table th,
+    .table td {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+  }
+  
